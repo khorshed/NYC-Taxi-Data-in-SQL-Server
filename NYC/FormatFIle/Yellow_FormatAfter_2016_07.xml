@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <RECORD>
+  <FIELD ID="1" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="5" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="2" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>
+  <FIELD ID="3" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>
+  <FIELD ID="4" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="12"/>
+  <FIELD ID="5" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>  
+  <FIELD ID="6" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="20" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="7" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="12"/>
+  <FIELD ID="8" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="20" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="9" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="20" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>  
+  <FIELD ID="10" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="41"/>
+  <FIELD ID="11" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="41"/>
+  <FIELD ID="12" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="41"/>
+  <FIELD ID="13" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>
+  <FIELD ID="14" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>
+  <FIELD ID="15" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>
+  <FIELD ID="16" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="30"/>  
+  <FIELD ID="17" xsi:type="CharTerm" TERMINATOR="\r\n" MAX_LENGTH="30"/>  
+ </RECORD>   
+ <ROW>
+  <COLUMN SOURCE="1" NAME="vendor_id" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="2" NAME="tpep_pickup_datetime" xsi:type="SQLDATETIME2" SCALE="7"/>
+  <COLUMN SOURCE="3" NAME="tpep_dropoff_datetime" xsi:type="SQLDATETIME2" SCALE="7"/>
+  <COLUMN SOURCE="4" NAME="passenger_count" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="5" NAME="trip_distance" xsi:type="SQLVARYCHAR"/>    
+  <COLUMN SOURCE="6" NAME="rate_code_id" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="7" NAME="store_and_fwd_flag" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="8" NAME="pickup_location_id" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="9" NAME="dropoff_location_id" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="10" NAME="payment_type" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="11" NAME="fare_amount" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="12" NAME="extra" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="13" NAME="mta_tax" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="14" NAME="tip_amount" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="15" NAME="tolls_amount" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="16" NAME="improvement_surcharge" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="17" NAME="total_amount" xsi:type="SQLVARYCHAR"/>
+  
+ </ROW>
+</BCPFORMAT>
